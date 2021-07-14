@@ -16,12 +16,23 @@ body{
     grid-gap: 7px;
     padding: 4em 0;
 }
+.movie_enlace{
+    text-decoration: none;
+}
+.movie_figure{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 10px;
+}
 .movie_img{
     width: 100%;
     object-fit: cover;
-    height: 80%;
-    margin-bottom: 10px;
+    height: 100%;
     border-radius: 4px 4px 0 0;
+    transition-duration: .5s;
+}
+.movie_enlace:hover .movie_img{
+    filter: brightness(60%);
 }
 .movie_title{
     color: #fff;
