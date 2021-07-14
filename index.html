@@ -1,114 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keudi Movies</title>
-</head>
-<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #000;
+        font-family: sans-serif;
+      }
+      .movie-container {
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 250px;
+        grid-gap: 7px;
+        padding: 4em 0;
+      }
+      .movie_enlace {
+        text-decoration: none;
+      }
+      .movie_figure {
+        width: 100%;
+        height: 80%;
+        margin-bottom: 10px;
+      }
+      .movie_img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        border-radius: 4px 4px 0 0;
+        transition-duration: 0.5s;
+      }
+      .movie_enlace:hover .movie_img {
+        filter: brightness(60%);
+      }
+      .movie_title {
+        color: #fff;
+        font-size: 9px;
+        text-align: center;
+        margin-bottom: 5px;
+        font-weight: 300;
+      }
+      .movie_hd {
+        color: rgb(167, 167, 167);
+        text-align: center;
+        display: block;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
     <div class="movie-container">
-        <div class="movie_item">
-            <a href="" class="movie_enlace">
-                <figure class="movie_figure">
-                    <img src="./images/avengerinfinitywar.jpg" alt="infinity war" class="movie_img">
-                </figure>
-                <figcaption class="movie_figcaption">
-                    <h2 class="movie_title">Infinity Wars</h2>
-                    <span class="movie_hd">HD</span>
-                </figcaption>
-            </a>
-        </div>
-
-        <div class="movie_item">
-            <a href="" class="movie_enlace">
-                <figure class="movie_figure">
-                    <img src="./images/birdsofprey.jpg" alt="infinity war" class="movie_img">
-                </figure>
-                <figcaption class="movie_figcaption">
-                    <h2 class="movie_title">Aves de Presa</h2>
-                    <span class="movie_hd">HD</span>
-                </figcaption>
-            </a>
-        </div>
-        <div class="movie_item">
-            <a href="" class="movie_enlace">
-                <figure class="movie_figure">
-                    <img src="./images/badboys2.jpg" alt="infinity war" class="movie_img">
-                </figure>
-                <figcaption class="movie_figcaption">
-                    <h2 class="movie_title">Bad Boys</h2>
-                    <span class="movie_hd">HD</span>
-                </figcaption>
-            </a>
-        </div>
-        <div class="movie_item">
-            <a href="" class="movie_enlace">
-                <figure class="movie_figure">
-                    <img src="./images/venom.jpg" alt="infinity war" class="movie_img">
-                </figure>
-                <figcaption class="movie_figcaption">
-                    <h2 class="movie_title">Venom</h2>
-                    <span class="movie_hd">HD</span>
-                </figcaption>
-            </a>        
-        </div>
-        <div class="movie_item">
-            <a href="" class="movie_enlace">
-                <figure class="movie_figure">
-                    <img src="./images/matrix.jpg" alt="infinity war" class="movie_img">
-                </figure>
-                <figcaption class="movie_figcaption">
-                    <h2 class="movie_title">The Matrix</h2>
-                    <span class="movie_hd">HD</span>
-                </figcaption>
-            </a>
-        </div>
-        <div class="movie_item">
-            <a href="" class="movie_enlace">
-                <figure class="movie_figure">
-                    <img src="./images/terminatorfinal.jpg" alt="infinity war" class="movie_img">
-                </figure>
-                <figcaption class="movie_figcaption">
-                    <h2 class="movie_title">Terminator:destino</h2>
-                    <span class="movie_hd">HD</span>
-                </figcaption>
-            </a>        
-        </div>
-        <div class="movie_item">
-            <a href="" class="movie_enlace">
-                <figure class="movie_figure">
-                    <img src="./" alt="movie" class="movie_img">
-                </figure>
-                <figcaption class="movie_figcaption">
-                    <h2 class="movie_title">Movie 7</h2>
-                    <span class="movie_hd">HD</span>
-                </figcaption>
-            </a>
-        </div>
-        <div class="movie_item">
-            <a href="" class="movie_enlace">
-                <figure class="movie_figure">
-                    <img src="./" alt="movie" class="movie_img">
-                </figure>
-                <figcaption class="movie_figcaption">
-                    <h2 class="movie_title">Movie 8</h2>
-                    <span class="movie_hd">HD</span>
-                </figcaption>
-            </a>
-        </div>
-        <div class="movie_item">
-            <a href="" class="movie_enlace">
-                <figure class="movie_figure">
-                    <img src="./" alt="movie" class="movie_img">
-                </figure>
-                <figcaption class="movie_figcaption">
-                    <h2 class="movie_title">Movie 9</h2>
-                    <span class="movie_hd">HD</span>
-                </figcaption>
-            </a>
-        </div>
+      <div class="movie_item">
+        <a href="" class="movie_enlace">
+          <figure class="movie_figure">
+            <img
+              src="./images/avengerinfinitywar.jpg"
+              alt="infinity war"
+              class="movie_img"
+            />
+          </figure>
+          <figcaption class="movie_figcaption">
+            <h2 class="movie_title">Infinity Wars</h2>
+            <span class="movie_hd">HD</span>
+          </figcaption>
+        </a>
+      </div>
+      <div class="movie_item">
+        <a href="" class="movie_enlace">
+          <figure class="movie_figure">
+            <img
+              src="./images/birdsofprey.jpg"
+              alt="infinity war"
+              class="movie_img"
+            />
+          </figure>
+          <figcaption class="movie_figcaption">
+            <h2 class="movie_title">Aves de Presa</h2>
+            <span class="movie_hd">HD</span>
+          </figcaption>
+        </a>
+      </div>
+      <div class="movie_item">
+        <a href="" class="movie_enlace">
+          <figure class="movie_figure">
+            <img
+              src="./images/badboys2.jpg"
+              alt="infinity war"
+              class="movie_img"
+            />
+          </figure>
+          <figcaption class="movie_figcaption">
+            <h2 class="movie_title">Bad Boys</h2>
+            <span class="movie_hd">HD</span>
+          </figcaption>
+        </a>
+      </div>
+      <div class="movie_item">
+        <a href="" class="movie_enlace">
+          <figure class="movie_figure">
+            <img
+              src="./images/venom.jpg"
+              alt="infinity war"
+              class="movie_img"
+            />
+          </figure>
+          <figcaption class="movie_figcaption">
+            <h2 class="movie_title">Venom</h2>
+            <span class="movie_hd">HD</span>
+          </figcaption>
+        </a>
+      </div>
+      <div class="movie_item">
+        <a href="" class="movie_enlace">
+          <figure class="movie_figure">
+            <img
+              src="./images/matrix.jpg"
+              alt="infinity war"
+              class="movie_img"
+            />
+          </figure>
+          <figcaption class="movie_figcaption">
+            <h2 class="movie_title">The Matrix</h2>
+            <span class="movie_hd">HD</span>
+          </figcaption>
+        </a>
+      </div>
+      <div class="movie_item">
+        <a href="" class="movie_enlace">
+          <figure class="movie_figure">
+            <img
+              src="./images/terminatorfinal.jpg"
+              alt="infinity war"
+              class="movie_img"
+            />
+          </figure>
+          <figcaption class="movie_figcaption">
+            <h2 class="movie_title">Terminator:destino</h2>
+            <span class="movie_hd">HD</span>
+          </figcaption>
+        </a>
+      </div>
+      <div class="movie_item">
+        <a href="" class="movie_enlace">
+          <figure class="movie_figure">
+            <img src="./" alt="movie" class="movie_img" />
+          </figure>
+          <figcaption class="movie_figcaption">
+            <h2 class="movie_title">Movie 7</h2>
+            <span class="movie_hd">HD</span>
+          </figcaption>
+        </a>
+      </div>
+      <div class="movie_item">
+        <a href="" class="movie_enlace">
+          <figure class="movie_figure">
+            <img src="./" alt="movie" class="movie_img" />
+          </figure>
+          <figcaption class="movie_figcaption">
+            <h2 class="movie_title">Movie 8</h2>
+            <span class="movie_hd">HD</span>
+          </figcaption>
+        </a>
+      </div>
+      <div class="movie_item">
+        <a href="" class="movie_enlace">
+          <figure class="movie_figure">
+            <img src="./" alt="movie" class="movie_img" />
+          </figure>
+          <figcaption class="movie_figcaption">
+            <h2 class="movie_title">Movie 9</h2>
+            <span class="movie_hd">HD</span>
+          </figcaption>
+        </a>
+      </div>
+      <div class="movie_item">
+        <a href="" class="movie_enlace">
+          <figure class="movie_figure">
+            <img src="./" alt="movie" class="movie_img" />
+          </figure>
+          <figcaption class="movie_figcaption">
+            <h2 class="movie_title">Movie 10</h2>
+            <span class="movie_hd">HD</span>
+          </figcaption>
+        </a>
+      </div>
+      <div class="movie_item">
+        <a href="" class="movie_enlace">
+          <figure class="movie_figure">
+            <img src="./" alt="movie" class="movie_img" />
+          </figure>
+          <figcaption class="movie_figcaption">
+            <h2 class="movie_title">Movie 11</h2>
+            <span class="movie_hd">HD</span>
+          </figcaption>
+        </a>
+      </div>
     </div>
-</body>
+  </body>
 </html>
